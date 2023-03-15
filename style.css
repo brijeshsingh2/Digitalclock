@@ -1,0 +1,85 @@
+body{
+    background-color: rgb(1, 5, 25);
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    display: flex;
+    border: 1px solid;
+    width: 800px;
+    padding: 70px;
+    box-shadow: 0 0 20px white;
+    justify-content: center;
+}
+#hh ,#mm, #ss,#ampm{
+    text-align: center;
+    border: 1px solid;
+    padding: 50px;
+  margin: 10px;
+  font-size: 38px;
+  border-radius: 50%;
+  border-width: 10px;
+}
+#hh{
+    border-color: green;
+    color: aqua;
+    box-shadow: 0 0 30px rgb(0, 255, 0);
+    animation: change 4s linear infinite;
+}
+
+#mm{
+    border-color: blue;
+    color: pink;
+    box-shadow: 0 0 20px blue;
+    animation: change1 4s linear infinite;
+}
+
+#ss{
+    border-color: red;
+    color: white;
+    box-shadow: 0 0 20px red;
+    animation: change 4s linear infinite;
+}
+#ampm{
+    border-color: yellow;
+    color: brown;
+    box-shadow: 0 0 20px yellow;
+    animation: change1 4s linear infinite;
+}
+
+@keyframes change1{
+    0%{
+        border-color: rgb(0, 68, 255);
+        box-shadow: 0 0 30px rgb(0, 21, 255);
+    }
+    50%{
+        border-color: rgb(255, 238, 0);
+        box-shadow: 0 0 30px rgb(255, 251, 0);
+    }
+    100%{
+        border-color: rgb(255, 21, 0);
+        box-shadow: 0 0 30px rgb(47, 255, 0);
+    }
+
+}
+
+
+@keyframes change{
+    0%{
+        border-color: green;
+        box-shadow: 0 0 30px rgb(0, 255, 0);
+    }
+    50%{
+        border-color: gray;
+        box-shadow: 0 0 30px rgb(94, 97, 94);
+    }
+    100%{
+        border-color: blue;
+        box-shadow: 0 0 30px rgb(0, 21, 255);
+    }
+
+}
